@@ -1,0 +1,62 @@
+@import "constants/mixins.scss";
+@import "constants/variables.scss";
+@include global;
+
+.App-logo {
+  height: 4.3vmin;
+  min-height: 20px;
+  margin: 0 2vh;
+}
+
+.h-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background-color: $header-bg1;
+  min-height: 8.5vh;
+  align-items: center;
+  color: $text-color;
+  padding: 0vh 15vh;
+  input {
+    background-color: $input-bg;
+    width: 19.8%;
+    height: 42%;
+    border: none;
+    border-radius: 0.5vh;
+    color: $text-color;
+    padding-left: 1.1vh;
+  }
+}
+
+nav {
+  li:hover {
+    color: $hover;
+  }
+  &:first-of-type {
+    @include nav-options(35%, flex-start);
+  }
+  &:nth-of-type(2) {
+    @include nav-options(15%, flex-end);
+    margin-left: auto;
+    margin-right: 2vh;
+  }
+}
+
+.icons {
+  height: 2.8vmin;
+  margin: 0 0.5vmin;
+}
+
+.plus {
+  margin-top: 1.5vmin;
+  margin-bottom: 1vmin;
+}
+
+.avatar {
+  border-radius: 20%;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */

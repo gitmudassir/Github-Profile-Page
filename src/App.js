@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import Profile from "./components/Profile"
+import "./styles/App.scss";
+import Profile from "./modules/Profile"
 
 class App extends React.Component {
   render() {

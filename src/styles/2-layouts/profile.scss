@@ -1,0 +1,74 @@
+.App-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: calc(12px + 0.5vw);
+  margin: 3.5vh 18vh;
+  /* color: white; */
+}
+
+@media only screen and (max-width: 600px) {
+  .App-body {
+    flex-direction: column;
+    margin: 3.5vh 8vh;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        width: 100%;
+        border-bottom: 2px solid grey;
+      }
+    }
+  }
+  .search-area {
+    flex-direction: column;
+  }
+
+  .Repositories {
+    margin-top: 40px;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .top-search {
+    display: none;
+  }
+
+  .icons {
+    min-height: 15px;
+  }
+}
+
+.Left-panel {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.Profile-pic {
+  height: 200px;
+  width: 200px;
+}
+
+.Right-panel {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 2vmax;
+}

@@ -1,0 +1,28 @@
+@import "constants/mixins.scss";
+@import "constants/variables.scss";
+@include global;
+
+
+.Repositories {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    li {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .description {
+        font-size: small;
+        font-weight: 500;
+    }
+    .language {
+        margin-top: 10px;
+        font-size: small;
+        font-weight: 600;
+        font-color: lightgrey;
+    }
+}
